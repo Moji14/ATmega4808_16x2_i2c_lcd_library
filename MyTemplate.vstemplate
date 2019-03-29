@@ -1,0 +1,117 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ATmega4808_16x2_i2c_lcd_library</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CandCPP</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ATmega4808_16x2_i2c_lcd_library</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Atmel_START_adaption_Patrick Taling.cproj" File="Atmel_START_adaption_Patrick Taling.cproj" ReplaceParameters="true">
+      <Folder Name="libm" TargetFolderName="libm" />
+      <Folder Name="Config" TargetFolderName="Config">
+        <ProjectItem ReplaceParameters="true" TargetFileName="clock_config.h">clock_config.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RTE_Components.h">RTE_Components.h</ProjectItem>
+      </Folder>
+      <Folder Name="doxygen" TargetFolderName="doxygen">
+        <Folder Name="generator" TargetFolderName="generator">
+          <ProjectItem ReplaceParameters="false" TargetFileName="doxyfile.doxygen">doxyfile.doxygen</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="DoxygenLayout.xml">DoxygenLayout.xml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="i2c.dox">i2c.dox</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="i2c_master.dox">i2c_master.dox</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="mainpage.dox">mainpage.dox</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="system.dox">system.dox</ProjectItem>
+      </Folder>
+      <Folder Name="examples" TargetFolderName="examples">
+        <Folder Name="include" TargetFolderName="include">
+          <ProjectItem ReplaceParameters="true" TargetFileName="i2c_master_example.h">i2c_master_example.h</ProjectItem>
+        </Folder>
+        <Folder Name="src" TargetFolderName="src">
+          <ProjectItem ReplaceParameters="true" TargetFileName="i2c_master_example.c">i2c_master_example.c</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="include" TargetFolderName="include">
+        <ProjectItem ReplaceParameters="true" TargetFileName="atmel_start_pins.h">atmel_start_pins.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bod.h">bod.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ccp.h">ccp.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="clkctrl.h">clkctrl.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="cpuint.h">cpuint.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="driver_init.h">driver_init.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="i2c_master.h">i2c_master.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="i2c_simple_master.h">i2c_simple_master.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="i2c_types.h">i2c_types.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="port.h">port.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="protected_io.h">protected_io.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="rstctrl.h">rstctrl.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="slpctrl.h">slpctrl.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="system.h">system.h</ProjectItem>
+      </Folder>
+      <Folder Name="modules" TargetFolderName="modules">
+        <Folder Name="bod" TargetFolderName="bod">
+          <Folder Name="doc" TargetFolderName="doc">
+            <ProjectItem ReplaceParameters="false" TargetFileName="bod.rst">bod.rst</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="clkctrl" TargetFolderName="clkctrl">
+          <Folder Name="doc" TargetFolderName="doc">
+            <ProjectItem ReplaceParameters="false" TargetFileName="clkctrl.rst">clkctrl.rst</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="cpuint" TargetFolderName="cpuint">
+          <Folder Name="doc" TargetFolderName="doc">
+            <ProjectItem ReplaceParameters="false" TargetFileName="cpuint.rst">cpuint.rst</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="slpctrl" TargetFolderName="slpctrl">
+          <Folder Name="doc" TargetFolderName="doc">
+            <ProjectItem ReplaceParameters="false" TargetFileName="slpctrl.rst">slpctrl.rst</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="twi" TargetFolderName="twi">
+          <Folder Name="doc" TargetFolderName="doc">
+            <ProjectItem ReplaceParameters="false" TargetFileName="twi.rst">twi.rst</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder Name="src" TargetFolderName="src">
+        <ProjectItem ReplaceParameters="true" TargetFileName="bod.c">bod.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="clkctrl.c">clkctrl.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="cpuint.c">cpuint.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="driver_init.c">driver_init.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="i2c_master.c">i2c_master.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="i2c_simple_master.c">i2c_simple_master.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="i2c_types.c">i2c_types.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="protected_io.S">protected_io.S</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="slpctrl.c">slpctrl.c</ProjectItem>
+      </Folder>
+      <Folder Name="utils" TargetFolderName="utils">
+        <Folder Name="assembler" TargetFolderName="assembler">
+          <ProjectItem ReplaceParameters="true" TargetFileName="gas.h">gas.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="iar.h">iar.h</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="assembler.h">assembler.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="atomic.h">atomic.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="compiler.h">compiler.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="interrupt_avr8.h">interrupt_avr8.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="utils.h">utils.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="utils_assert.h">utils_assert.h</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="atmel_start.c">atmel_start.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="atmel_start.h">atmel_start.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="display_all_data.c">display_all_data.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="display_all_data.h">display_all_data.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="driver_isr.c">driver_isr.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="i2c_lcd.c">i2c_lcd.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="i2c_lcd.h">i2c_lcd.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="main.c">main.c</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
